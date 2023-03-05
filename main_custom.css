@@ -249,6 +249,10 @@
     bottom: 30px;
     right: 400px;
 }
+#krTagHolder {
+    margin-top: 10px;
+    margin-right: 1100px;
+}
 
 /* RELOAD */
 
