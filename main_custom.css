@@ -1,0 +1,385 @@
+/* 乱伦css Discord: 9km#7612 Github: 9-kilometer Krunker: 9km */
+
+:root {
+    --乱伦CLR:#ba7ce8;
+}
+#mainLogo,
+#mainLogoFace,
+#aMerger,
+#newsHolder,
+#youNewDiv,
+#onetrust-consent-sdk,
+#aHolder,
+.imageButton,
+#editorBtnM,
+.headerBarRight .verticalSeparator,
+#seasonLabel,
+.krSocial,
+#mailCount,
+#voiceDisplay,
+#bubbleContainer,
+.endAHolder,
+#igXPBar,
+.button.small.buttonO img,
+#tlInfHold,
+.setSugBox,
+.lC-cube,
+#curGameInfo,
+#chatSwitch,
+#maxHP,
+.weapKey,
+#ammoIcon,
+#challIcon,
+#timerIcon,
+#uiBase.onMenu #specTeam0,
+#uiBase.onMenu #spec0,
+#uiBase.onMenu #spec1,
+#uiBase.onMenu #specNames,
+#uiBase.onMenu #specStats,
+#uiBase.onMenu #specContr,
+#uiBase.onMenu #specKPDContr,
+#uiBase.onMenu #specSus,
+#uiBase.onMenu #specTeam1,
+#uiBase.onMenu #specGMessage,
+#uiBase.onMenu #specGameInfo,
+#loadTipsHolder span,
+#loadEditrBtn {
+    display: none !important;
+}
+
+/* MENU */
+
+.button,
+.button:hover{
+    border: hidden!important;
+}
+.menBtnIcn {
+    color: #fff !important;
+}
+#menuItemContainer::before {
+    content: '乱伦ware';
+    white-space: nowrap;
+    transform: skew(15deg);
+    font-size: 16px;
+    color: #e10000;
+    margin-left: 20px;
+    background-color: transparent !important;
+    font-weight: bold;
+}
+#gameNameHolder::before {
+    content: url('https://cdn.discordapp.com/attachments/1064674927690645616/1080673338424299541/u1.gif');
+    position: relative;
+    bottom: 250px;
+}
+#gameNameHolder::after {
+    content: "aimLock/smoothTrack/triggerBot";
+    font-size: 18px;
+    color: rgba(255,255,255,.6);
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    bottom: 290px;
+}
+#gameNameHolder {
+    top: 360px;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, 0);
+}
+.xpBarB {
+    background-image: none;
+    background-color: var(--乱伦CLR);
+}
+.progressBarInner {
+	background: var(--乱伦CLR);
+	border-radius: 0;
+}
+
+/* LOADING SCREEN */
+
+#initLoader {
+    background-color: #000;
+}
+#loadTipsHolder {
+    bottom: unset;
+    top: 200px;
+    width: unset;
+    font-size: 0;
+    position: fixed;
+}
+#loadInfoRHolder::before {
+    content: url('https://cdn.discordapp.com/attachments/1064674927690645616/1081564846245560360/pinkgun.gif');
+    position: relative;
+    top: 20px;
+}
+#loadTipsHolder::after {
+    content: "Injecting [乱伦.js] UserScript...";
+    white-space: nowrap;
+    color: #ff0000;
+    font-size: 28px;
+    position: absolute;
+    right: 300px;
+}
+#lC-cont::before {
+    content: url('https://cdn.discordapp.com/attachments/1064674927690645616/1080670003986178069/main1.png');
+    display: block;
+    margin-top:100px;
+}
+#loadGamNm {
+    font-size: 32px;
+    color: #fff;
+}
+#loadInfoLHolder {
+    font-size: 0;
+    color: #fff;
+    position: fixed;
+}
+#loadInfoLHolder::before {
+    content: '🌐🔮乱伦ware';
+    font-size: 28px;
+    color: var(--乱伦CLR);
+}
+#loadInfoLHolder::after {
+    content: "github.com/9-kilometer";
+    font-size: 28px;
+    color: #fff;
+}
+#loadInfoRHolder {
+    font-size: 0;
+    position: fixed;
+}
+
+/* TIMER */
+
+#uiBase.onMenu #spectateUI {
+    display: block!important;
+    position: fixed;
+    bottom: 48.5%;
+    top: unset;
+    left: 50%;
+    right: unset;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+#uiBase.onMenu #spectateHUD {
+    display: flex;
+    justify-content: center;
+    transform: unset;
+    left: unset;
+}
+#uiBase.onMenu #specTimer {
+    display: block !important;
+    font-size: 35px;
+    background-color: transparent;
+    color: rgba(255,255,255,.5);
+}
+#timerVal::before {
+    content: '🌐🔮乱伦ware';
+    color: var(--乱伦CLR);
+    background-color: transparent !important;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    position: fixed;
+    top: 65px;
+}
+#timerVal {
+    color: #fff;
+    font-size: 26px;
+}
+#timerDisplay {
+    transform: scale(1.333, .85);
+    margin-right: 40px;
+}
+#topLeftHolder {
+    transform: scale(1.333, .85);
+    margin-left: 100px;
+}
+
+/* CHAT */
+
+#chatInputHolder {
+    background-color: transparent;
+    border: none;
+}
+#chatInput {
+    color: var(--乱伦CLR) !important;
+    background-color: transparent;
+    border-radius: 0px;
+    transform: scale(0);
+    height: 0;
+    padding: 0;
+    transition-duration: 0.25s;
+    font-size: 16px;
+    font-weight: bold;
+}
+#chatInput:focus {
+    height: 100%;
+    padding: 8px 16px;
+    transform: scale(1);
+}
+#chatInput::placeholder {
+    color: #fff !important;
+}
+.weaponChatIcon, .headShotChatIcon {
+    filter: brightness(0) drop-shadow(0 0 0 #000) opacity(1);
+}
+.kfMsg span[style*="#eb5656"] {
+    color: #e10000 !important;
+}
+.chatMsg[style="color:#fc03ec"] {
+    color: var(--乱伦CLR) !important;
+}
+
+/* LEADERBOARD/KILLSTREAK */
+
+#killsVal, #deathsVal, #streakVal, #myScoreVal, #kdVal {
+	color: #fff;
+}
+.leaderNameM {
+    color: #fff !important;
+}
+.leaderNameM span {
+    color: #e10000 !important;
+}
+#killStreakHolder {
+    position: fixed;
+    bottom: 30px;
+    right: 400px;
+}
+
+/* RELOAD */
+
+#reloadMsg::before {
+    content: '[EMPTY CLIP]';
+    color: #e10000 !important;
+    background-color: transparent !important;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+#reloadMsg {
+    background-color: transparent !important;
+    position: absolute;
+    border: none;
+    margin-right: -50%;
+    left: 49.75%;
+    transform: translate(-50%, 0);
+    bottom: 30%;
+    height: 100px;
+    font-size: 0;
+}
+#ammoDisplay {
+    padding: 0 !important;
+    z-index: 4;
+    position: fixed;
+    left: calc(50% - 100px);
+    bottom: 30%;
+    width: 200px;
+    height: 20px;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+    background-color: transparent !important;
+    text-align: right;
+    letter-spacing: 0;
+    -webkit-transform: unset !important;
+    transform: unset !important;
+}
+
+/* HUD */
+
+#ammoVal {
+    font-weight: bold;
+    text-overflow: clip;
+    font-size: 48px;
+    position: fixed;
+    right: 40px;
+    bottom: 30px;
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    width: auto;
+    padding-left: 5px;
+    padding-right: 130px;
+    transform: scale(1.333, .85);
+}
+#ammoMax {
+    color: #fff;
+    font-weight: bold;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 48px;
+    transform: scale(1.333, .85);
+}
+#ammoMax::first-letter {
+    font-size: 40px;
+    margin-right: 2px;
+    font-style: italic;
+}
+#weapDisplay {
+    position: fixed;
+    bottom: 120px;
+    right: 60px;
+}
+.weapItem {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.weapIcon {
+    transform: scale(1.5);
+    opacity: 0 !important;
+    transition-duration: 0.01s;
+    height: 0;
+}
+.weapIcon[style*="1"] {
+    opacity: 1 !important;
+    height: 70px;
+}
+#weapIconMel {
+    margin: 0 !important;
+}
+#healthBar {
+    margin-right: 100px;
+}
+.healthBarSeg:nth-child(4) .hpBSeg[style*=":0%;"]::before {
+    content: "CRITCAL!!";
+    position: fixed;
+    font-size: 24px;
+    left: 500px;
+    bottom: 20px;
+    color:  #e10000;
+    font-weight: bold;
+    z-index: 9;
+}
+#healthValueHolder {
+    position: relative;
+    transform: scale(1.333, .85);
+    left: 20px;
+}
+#healthValue {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+#healthValue::after {
+    content: "HP";
+    font-size: 16px;
+    margin-left: 4px;
+}
+#bottomLeftHolder::before {
+    content: "HACKER";
+    font-size: 16px;
+    position: fixed;
+    left: 30px;
+    bottom: 60px;
+    color:  #e10000;
+    font-weight: bold;
+    z-index: 9;
+}
+#hudClassIcon {
+    filter: grayscale(80%);
+}
